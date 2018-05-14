@@ -7,5 +7,5 @@ git commit -m "Aula 1"
 # Criar uma etiqueta para esta aula.
 git tag -a aula1 -m "Aula 1 - Maquina"
 # Enviar as mudanças para o reposítório remoto.
-git remote add https://github.com/Danilo2702/docker-unleashed
+git remote add https://github.com/Danilo2702/docker-unleashed.git
 git push -u origin master aula1
