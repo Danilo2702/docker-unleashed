@@ -1,4 +1,4 @@
-FROM python:3-slim
+FROM python:3
 COPY . /usr/src/
 WORKDIR /usr/src/
 RUN pip install -r /usr/src/requirements.txt
