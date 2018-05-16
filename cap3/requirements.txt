@@ -1,0 +1,2 @@
+Flask
+Flask-Redis==0.5.0
