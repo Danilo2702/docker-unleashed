@@ -7,9 +7,11 @@
 FROM python:2.7
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /code
+COPY . /code
 WORKDIR /code
 ENV FLASK_APP=appc.py
-RUN pip install Flask
+RUN pip install -r requirements.txt
+#RUN pip install Flask
 ADD . /code/
 WORKDIR /code
 CMD flask run --host=0.0.0.0

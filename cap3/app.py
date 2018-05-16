@@ -10,11 +10,6 @@ import datetime
 
 #Create the App
 app = Flask(__name__)
-redis = Redis(app)
-
-# The later on
-app = create_app('config.cfg')
-redis.init_app(app)
 
 #Redis Connection URL
 app.config['REDIS_URL'] = "redis://redis:6379/0"
