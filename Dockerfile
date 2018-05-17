@@ -12,6 +12,8 @@ WORKDIR /code
 ENV FLASK_APP=appc.py
 RUN pip install -r requirements.txt
 #RUN pip install Flask
+EXPOSE 5000
+HEALTHCHECK --interval=30s --timeout=3s CMD curl -f http://localhost:5000/ || exit 1
 ADD . /code/
 WORKDIR /code
 CMD flask run --host=0.0.0.0
